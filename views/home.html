@@ -5,28 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Liebre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="color">
     <header>
         <img src="/images/logo-mercado-liebre.svg" alt="logo mercadoliebre" width="300" height="300">
-        <h3>Lugar para poner tu barra de busqueda</h3>
-        <h3>Compra en cuotas y sin tarjeta de credito</h3>
+        <div>
+        <section class="rectangle en-linea"></section>
+        <section class="en-linea search-fondo">
+            <section class="en-linea search-lupa"><i class="fas fa-search fa-lg"></i></section>
+        </section>
+        </div>
+        <h3>Compra en cuotas y sin tarjeta de credito <i class="fas fa-hand-holding-usd"></i></h3>
         <ul>
-            <li> <a href = "/ofertas" >Ofertas</a></li>
-            <li><a href = "tiendasoficiales" >Tiendas Oficiales</a></li>
-            <li><a href = "vender" >Vender</a></li>
-            <li><a href = "ayuda" >Ayuda</a></li>
+            <li> <a href = "/ofertas" >Ofertas <i class="fas fa-tag"></i></a></li>
+            <li><a href = "tiendasoficiales" >Tiendas Oficiales <i class="fas fa-store"></i></a></li>
+            <li><a href = "vender" >Vender <i class="fas fa-handshake"></i></a></li>
+            <li><a href = "ayuda" >Ayuda <i class="fas fa-phone"></i></a></li>
             <br>
-            <li><a href = "creatucuenta" >Creá tu cuenta</a></li>
-            <li><a href = "ingresa" >Ingresa</a></li>
-            <li><a href = "miscompras" >Mis Compras</a></li>
+            <li><a href = "creatucuenta" >Creá tu cuenta <i class="fas fa-portrait"></i></a></li>
+            <li><a href = "ingresa" >Ingresa <i class="fas fa-sign-in-alt"></i></a></li>
+            <li><a href = "miscompras" >Mis Compras <i class="fas fa-shopping-cart"></i></a></li>
         </ul>
+        <div class="burger-fondo">
+            <i class="fas fa-bars burger-barras" ></i>
+        </div>
+        <br>
     </header>
     <main>
         <div>
-            <img src="/images/img-home-banner.jpg" height="100" width="382.4">
+            <img class="banner-center" src="/images/img-home-banner.jpg" height="100" width="382.4">
         </div>
-        <div>
+        <section>
             <h2>Basado en tu ultima visita</h2>
             <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera" width="200" height="200">
             <p>$6.770</p>
@@ -44,8 +59,8 @@
             <p>$23.200</p>
             <p>5% OFF</p>
             <h4>SmartTv Samsung 43"</h4>
-        </div>
-        <div>
+        </section>
+        <section>
             <h2>Sección de Ofertas</h2>
             <img src="/images/img-cafetera-moulinex.jpg" alt="cafetera" width="200" height="200">
             <p>$6.770</p>
@@ -63,14 +78,17 @@
             <p>$23.200</p>
             <p>5% OFF</p>
             <h4>SmartTv Samsung 43"</h4>
-        </div>
+        </section>
     </main>
     <footer>
         <div>
+            <i class="far fa-credit-card size-icons-pie"></i>
             <h3>Pagá con tarjeta o en efectivo</h3>
             <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            <i class="fas fa-gift size-icons-pie"></i>
             <h3>Envío gratis desde los $ 2.500</h3>
             <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
+            <i class="fas fa-user-shield size-icons-pie"></i>
             <h3>Seguridad, de principio a fin</h3>
             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
             <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>

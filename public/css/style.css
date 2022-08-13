@@ -1,0 +1,80 @@
+.color{
+    background-color: #EAC926;
+}
+
+body{
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+}
+
+body ul {
+    text-align: left;
+}
+
+.rectangle {
+    width: 230px;
+    height: 40px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+    border: solid;
+    border-radius: 5px;
+    border-width: thin;
+}
+.en-linea {
+    display: inline-block;
+}
+
+.search-fondo {
+    position: relative;
+    bottom: 16px;
+    background-color: white;
+    width: 39px;
+    height: 39px;
+    border-radius: 5px;
+    border: solid;
+    border-width: thin;
+}
+
+.search-lupa {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+}
+
+.burger-fondo {
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    border-width: thin;
+}
+
+.burger-barras {
+    margin-top: 10px;
+    color: white;
+}
+
+.size-icons-pie {
+    font-size: 2em;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+footer h3 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+body section img {
+    border: solid;
+    border-width: thin;
+}
+
+body p {
+    font-weight: bold;
+}
