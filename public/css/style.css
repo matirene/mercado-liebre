@@ -21,27 +21,26 @@ body p {
 }
 
 .logo {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3%;
+    padding: 3%;
 }
 
 .input {
     background-color: white;
-    border: solid 1px black;
+    border: solid 1px rgb(209, 209, 209);
     border-radius: 3px;
     color: #666;
     padding: 2px;
+    height: 30%;
 }
 
 .search-lupa {
-    background-color: white;
-    border: solid 1px black;
-    border-radius: 3px;
-    width: 10%;
     color:#666;
-    padding: 0.5%;
+    width: 120%;
+    height: 100%;
+    font-size: 80%;
+    background-color: white;
+    border: solid 1px rgb(209, 209, 209);;
+    border-radius: 3px;
 }
 
 body .top-header h4 {
@@ -53,6 +52,17 @@ body .top-header h4 {
 header nav {
     font-size: 15px;
     padding-left: 5%;
+}
+
+header nav ul li a:hover {
+    color: blue;
+}
+
+
+header ul li {
+
+    list-style-type: none;
+
 }
 
 header ul li a {
@@ -80,11 +90,6 @@ div.burger-menu{
     width: 100%;
 }
 
-main {
-    width: 90%;
-    margin: 0 auto;
-}
-
 main h2{
     padding: 2%;
     color: #666;
@@ -92,12 +97,14 @@ main h2{
 
 section.last-visit,
 section.offers{
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 main section div.productos article {
-    background-color: #ebebeb;
+    background-color: #ffffff;
     margin: 10px 0px;
 }
 
@@ -161,13 +168,112 @@ footer h3 {
     margin-block-end: 0em;
 }
 
+/*FORMULARIO*/
 
+.formulario{
+    margin: 0%;
+    background-color: rgb(223, 223, 223);
+    background-size: cover;
+    font-weight: inherit;
+    text-align: center;
+    padding: 5%;
+}
 
-@media (max-width: 360px){
+.back-form{
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);    
+    border: 2px solid rgb(208, 208, 208);
+    border-radius: 10px;
+    padding: 5%;
+    width: 75%;
+    margin: auto;
+}
+
+.formulario .input-style{
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 0.5%;
+    margin: 0.8%;
+}
+
+.formulario .input-checkbox-radio{
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 0.5%;
+}
+
+.formulario h2{
+    color: #000;
+}
+
+.style-button-enviar{
+    background-color: blue;
+    color: white;
+    border: solid 1px blue;
+    border-radius: 5px;
+    padding: 0.5%;
+    margin: 0.3%;
+    width: 15%;
+}
+
+.style-button-borrar{
+    background-color: red;
+    color: white;
+    border: solid 1px red;
+    border-radius: 5px;
+    padding: 0.5%;
+    margin: 0.3%;
+    width: 10%;
+}
+
+/*LOGIN*/
+
+.back-style{
+    background-color: rgb(223, 223, 223);
+    padding: 10%;
+}
+
+.box-login{
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);    
+    border: 2px solid rgb(208, 208, 208);
+    border-radius: 10px;
+    padding: 5%;
+    width: 75%;
+    margin: auto;
+}
+
+.login-style{
+    margin: auto;
+    text-align: center;
+}
+
+.input-style{
+    background-color: white;
+    border: solid 1px rgb(208, 208, 208);
+    border-radius: 5px;
+    padding: 1%;
+    margin: 3%;
+    width: 40%;
+}
+
+.button-style{
+
+    background-color: blue;
+    color: white;
+    border: solid 1px blue;
+    border-radius: 5px;
+    margin-top: 3%;
+    padding: 1% 2%;
+    width: 20%;
+}
+
+@media (max-width: 361px){
 
     .top-header{
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -175,18 +281,86 @@ footer h3 {
 
     .logo {
         flex-grow: 0.5;
+        width: 45%;
     }
     
     .input-flex{
+        display: flex;
         flex-grow: 0.5;
+        width: 45%;
+    }
+
+    .input{
+        display: flex;
+        width: 20%;
+    }
+
+    .search-lupa{
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 5%;
+        width: 45%;
+    }
+    
+    .h4-cuotas{
+        width: 100%;
+    }
+
+    header ul li{
+        font-size: 80%;
     }
 
     .border-article-div h4 {
         display: none;
     }
+
+    footer {
+
+        font-size: 70%;
+
+    }
 }
 
 @media (min-width: 361px){
+
+    .top-header{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .input-flex{
+        display: flex;
+        flex-direction: wrap;
+        flex-direction: row;
+        align-items: center;
+        width: 45%;
+    }
+
+    .input{
+        padding: 5px;
+        flex-grow: 0.8;
+    }
+
+    .search-lupa{
+        flex-grow: 0.2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 5%;
+        width: 1%;
+        height: 30%;
+    }
+
+    .logo{
+        width: 45%;
+    }
+
+    header nav ul li{
+        font-size: 90%;
+    }
+
 
     main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -208,42 +382,223 @@ footer h3 {
         width: 45%;
     }
 
+    article .border-article-div h4{
+        font-size: 12px;
+    }
+
+    article .border-article-div i{
+        font-size: 12px;
+    }
+
+    article .border-article-div p{
+        font-size: 12px;
+    }
+
     .price,
     .discount{
         width: 50%;
     }
+
+    footer {
+
+        font-size: 70%;
+
+    }
 }
+
+@media (max-width:600px){
+
+    .input{
+        width: 50%;
+        flex-grow: 0.8;
+    }
+
+    .search-lupa{
+        flex-grow: 0.2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 5%;
+        width: 1%;
+    }
+
+    .h4-cuotas{
+        font-size: 80%;
+    }
+
+    .style-button-enviar{
+        
+        width: 30%;
+    }
+
+    .style-button-borrar{
+    
+        width: 30%;
+    }
+
+}
+
+@media (min-width:600px){
+
+    header nav ul li{
+        font-size: 90%;
+    }
+
+
+    .style-button-enviar{
+        
+        width: 30%;
+    }
+
+    .style-button-borrar{
+    
+        width: 30%;
+    }
+
+    article .border-article-div h4{
+        font-size: 14px;
+    }
+
+    article .border-article-div i{
+        font-size: 14px;
+    }
+
+    article .border-article-div p{
+        font-size: 14px;
+    }
+
+
+    footer {
+
+        font-size: 80%;
+
+    }
+
+}
+
 
 @media (min-width: 769px){
 
-    .top-header{
+    div.top-header{
+
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
     }
 
-    .top-header div{
+    .logo{
+
         width: 30%;
+    }
+
+    .h4-cuotas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        font-size: 80%;
+    }
+
+    header nav ul {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    header nav ul li {
+
+        display: flex;
+        font-size: 90%;
+
+    }
+
+    header nav ul li a {
+
+        list-style-type: none;
+
     }
 
     .input-flex{
         display: flex;
-        flex-direction: wrap;
+        flex-wrap: nowrap;
         flex-direction: row;
+        width: 30%;
+        justify-content: space-around
     }
 
-    .input{
-        flex-grow: 0.9;
+
+    .input-flex .search-lupa{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 5%;
+        width: 1%;
     }
 
-    .search-lupa{
-        flex-grow: 0.1;
+
+    main {
+        width: 100%;
     }
     
     main section div.productos article{
         width: 22%;
     }
 
+    article .border-article-div h4{
+        font-size: 12px;
+    }
+
+    article .border-article-div i{
+        font-size: 12px;
+    }
+
+    article .border-article-div p{
+        font-size: 12px;
+    }
+
+    footer {
+
+        font-size: 80%;
+
+    }
+
+}
+
+
+@media (min-width: 1100px){
+
+    header nav ul li{
+        font-size: 110%;
+    }
+
+
+    .style-button-borrar{
+
+        width:15%;
+    }
+
+    .search-lupa {
+        width: 100%;
+        padding: 0.5%;
+    }
+
+    article .border-article-div h4{
+        font-size: 16px;
+    }
+
+    article .border-article-div i{
+        font-size: 16px;
+    }
+
+    article .border-article-div p{
+        font-size: 16px;
+    }
+
+    footer {
+
+        font-size: 90%;
+
+    }
 }

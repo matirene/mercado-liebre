@@ -12,3 +12,21 @@ app.listen(3020, () => {
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'views/home.html'))
 })
+
+app.get('/register', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/register.html'))
+})
+
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views/login.html'))
+})
+
+app.post('/register', (req, res) => {
+    console.log('Te registraste correctamente');
+    res.redirect('/');
+})
+
+app.post('/login', (req, res) => {
+    console.log('Ingresaste correctamente');
+    res.redirect('/');
+})
