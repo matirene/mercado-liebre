@@ -91,6 +91,7 @@ div.burger-menu{
 }
 
 main h2{
+    font-size: 16px;
     padding: 2%;
     color: #666;
 }
@@ -112,7 +113,7 @@ main section article img{
     width: 100%;
 }
 
-.border-article-div {
+.border-article-div {  
     border-top: 1px solid #c7c5c5;
     padding: 15px;
 }
@@ -191,9 +192,9 @@ footer h3 {
 
 .formulario .input-style{
     background-color: white;
-    border: solid 1px black;
+    border: solid 1px rgb(208, 208, 208);
     border-radius: 5px;
-    padding: 0.5%;
+    padding: 1%;
     margin: 0.8%;
 }
 
@@ -201,6 +202,11 @@ footer h3 {
     font-size: 14px;
     font-weight: lighter;
     padding: 0.5%;
+    margin: 10px 0px;
+}
+
+.formulario .input-checkbox-radio div{
+    margin: 5px 0px;
 }
 
 .formulario h2{
@@ -260,13 +266,21 @@ footer h3 {
 
 .button-style{
 
-    background-color: blue;
-    color: white;
-    border: solid 1px blue;
+    background-color: white;
+    color: blue;
+    border: solid 2px blue;
     border-radius: 5px;
     margin-top: 3%;
     padding: 1% 2%;
     width: 20%;
+    font-size: 14px;
+}
+
+.button-style:hover{
+    background-color: #0022AA;
+    border: #0022AA solid 2px;
+    color: white ;
+    
 }
 
 @media (max-width: 361px){
@@ -313,6 +327,7 @@ footer h3 {
     .border-article-div h4 {
         display: none;
     }
+
 
     footer {
 
@@ -362,10 +377,6 @@ footer h3 {
     }
 
 
-    main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
     .burger-menu {
         display: none;
     }
@@ -382,12 +393,20 @@ footer h3 {
         width: 45%;
     }
 
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
     article .border-article-div h4{
         font-size: 12px;
     }
 
     article .border-article-div i{
         font-size: 12px;
+        width: 25px;
+        height: 25px;
+        position: relative;
+        right: -85%;
     }
 
     article .border-article-div p{
@@ -442,6 +461,10 @@ footer h3 {
 
     header nav ul li{
         font-size: 90%;
+    }
+
+    main h2{
+        font-size: 18px;
     }
 
 
@@ -552,6 +575,10 @@ footer h3 {
 
     article .border-article-div i{
         font-size: 12px;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        right: -85%;
     }
 
     article .border-article-div p{
@@ -566,11 +593,14 @@ footer h3 {
 
 }
 
-
 @media (min-width: 1100px){
 
     header nav ul li{
         font-size: 110%;
+    }
+
+    main h2{
+        font-size: 20px;
     }
 
 
@@ -590,15 +620,50 @@ footer h3 {
 
     article .border-article-div i{
         font-size: 16px;
+
     }
 
     article .border-article-div p{
         font-size: 16px;
     }
 
-    footer {
+    article div.border-article-div h4.ocultar{
+        visibility: hidden;
+    }
 
+    main section article:hover h4.ocultar{
+        visibility: visible;
+    }
+
+    main section article{
+        box-shadow: none;
+    }
+
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section article:hover .border-article-div i{
+        transform: rotateZ(-90deg);
+        transition: all 0.5s;
+        
+    }
+
+
+    footer section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
         font-size: 90%;
 
+    }
+
+    footer section div i:hover{
+        color: #EAC926;
+    }
+
+    footer section div.footer-1{
+        width: 30%;
     }
 }
