@@ -196,6 +196,7 @@ footer h3 {
     border-radius: 5px;
     padding: 1%;
     margin: 0.8%;
+    width: 80%;
 }
 
 .formulario .input-checkbox-radio{
@@ -583,6 +584,10 @@ footer h3 {
 
     article .border-article-div p{
         font-size: 12px;
+    }
+
+    .formulario .input-style{
+        width: 60%;
     }
 
     footer {
